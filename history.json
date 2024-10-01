@@ -1,0 +1,30 @@
+[
+    {
+        "date": "2024-09-26 14:24:33.967907",
+        "weather": "Клайпеда, temperature 19°C, Облачно\nsunrise: 07:29\nsunset: 19:24\n"
+    },
+    {
+        "date": "2024-09-26 14:24:41.497043",
+        "weather": "Клайпеда, temperature 19°C, Облачно\nsunrise: 07:29\nsunset: 19:24\n"
+    },
+    {
+        "date": "2024-10-01 11:47:11.748608",
+        "weather": "Вильнюс, temperature 8°C, Дождь\nsunrise: 07:21\nsunset: 18:55\n"
+    },
+    {
+        "date": "2024-10-01 11:48:11.428865",
+        "weather": "Вильнюс, temperature 8°C, Дождь\nsunrise: 07:21\nsunset: 18:55\n"
+    },
+    {
+        "date": "2024-10-01 11:49:51.815889",
+        "weather": "Вильнюс, temperature 8°C, Дождь\nsunrise: 07:21\nsunset: 18:55\n"
+    },
+    {
+        "date": "2024-10-01 11:50:13.794920",
+        "weather": "Вильнюс, temperature 8°C, Дождь\nsunrise: 07:21\nsunset: 18:55\n"
+    },
+    {
+        "date": "2024-10-01 11:59:22.428322",
+        "weather": "Неринга, temperature 9°C, Дождь\nsunrise: 07:38\nsunset: 19:11\n"
+    }
+]

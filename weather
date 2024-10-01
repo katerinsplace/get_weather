@@ -1,0 +1,32 @@
+#!/usr/bin/env python3.12
+from pathlib import Path
+
+from coordinates import get_coordinates
+from exceptions import CantGetIP, CantGetCoordinates, ApiServiceError
+from weather_api_service import get_weather
+from weather_formatter import format_weather
+from history import save_weather, JSONFileWeatherStorage
+
+
+def main():
+    try:
+        coordinates = get_coordinates()
+    except CantGetIP:
+        print("Can't get IP")
+        exit(1)
+    except CantGetCoordinates:
+        print("Can't get coordinates")
+        exit(1)
+    try:
+        weather = get_weather(coordinates)
+    except ApiServiceError:
+        print("Can't get weather by coordinates {coordinates}")
+        exit(1)
+    print(format_weather(weather))
+    save_weather(
+        weather,
+        JSONFileWeatherStorage(Path.cwd() / "history.json")
+    )
+
+if __name__ == '__main__':
+    main()
